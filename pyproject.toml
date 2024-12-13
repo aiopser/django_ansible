@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "codebox"
+version = "0.1.0"
+description = ""
+authors = ["comyn <comynli@magedu.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.0.6"
+djangorestframework = "^3.13.1"
+drf-spectacular = "^0.22.1"
+ansible-runner = "^2.2.1"
+gitpython = "^3.1.27"
+celery = {version = "^5.2.7", extras = ["redis"]}
+django-celery-results = "^2.4.0"
+django-celery-beat = "^2.3.0"
+
+[tool.poetry.dev-dependencies]
+ansible = "^6.0.0"
+ipython = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "mindcube"
+url = "https://nexus.mindcube.xyz/repository/pypi/simple"
+default = true
